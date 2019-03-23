@@ -11,7 +11,7 @@ RN-52, piezo amp, DC-DC converters, powered by 3.7V Li-ion battery.
 - consumes high current. maybe changing the resistor can slightly solve this.  
   
   
-# Components  
+## Components  
 RN-52: Bluetooth Module  
 [Breakout+Amp](https://shop.emergeplus.jp/hachiware-btamp-kit/)  
 or any other breakouts (but requires to remove the input resistor from the following Amplifier)  
@@ -26,7 +26,7 @@ MIWI06-24D05: DC-DC Convertor (used to convert 12V to +5V and -5V)
 [MIWI06-24D05](http://akizukidenshi.com/catalog/g/gM-06536/) 
   
   
-# Implementation  
+## Implementation  
 - Connect battery to LTC3124.
 - Connect 12V output of LTC3124 to MIWI06-24D05 and IFJM-001.
 - Connect +5V output of MIWI06-24D05 to IFJM-001 and RN-52, and -5V to IFJM-001.
@@ -34,7 +34,23 @@ MIWI06-24D05: DC-DC Convertor (used to convert 12V to +5V and -5V)
 - Use 3.9kΩ resistor for the IJFM-001 bus voltage adjusting pins.
 - Include a current limiting fuse etc. for safety.
   
-# Publications  
+## Publications  
 Michinari Kono, and Jun Rekimoto. 2019. wavEMS: Improving Signal Variation Freedom of Electrical Muscle Stimulation. 2019 IEEE Conference on Virtual Reality and 3D User Interfaces Workshop on Human Augmentation and its Applications (IEEE VR ’19). 4 pages. [https://arxiv.org/abs/1902.03184](https://arxiv.org/abs/1902.03184)  
   
-Created by Michinari Kono, 2018
+Also see...  
+Michinari Kono, Yoshio Ishiguro, Takashi Miyaki, and Jun Rekimoto. 2018. Design and Study of a Multi-Channel Electrical Muscle Stimulation Toolkit for Human Augmentation. In Proceedings of the 9th Augmented Human International Conference (AH '18). ACM, New York, NY, USA, Article 11, 8 pages. DOI: https://doi.org/10.1145/3174910.3174913  
+and [multi-ems](https://github.com/rkmtlab/multi-ems)
+
+The following article includes a survey of EMS in HCI, and safety topics.
+
+Michinari Kono, Takumi Takahashi, Hiromi Nakamura, Takashi Miyaki, and Jun Rekimoto. 2018. Design Guideline for Developing Safe Systems that Apply Electricity to the Human Body. ACM Trans. Comput.-Hum. Interact. 25, 3, Article 19 (June 2018), 36 pages. DOI: https://doi.org/10.1145/3184743  
+  
+## Authors
+
+Michinari Kono, U-Tokyo ( mchkono[at]acm.org )
+
+
+## Copyrights, License      
+  
+Copyright (c) 2018 Michinari Kono  
+Released under the MIT license 
